@@ -35,15 +35,14 @@
 <body>
   <div id="demo">
     <h1>counter-app</h1>
-    <!-- this is going to do whatever the tag's defaults are -->
-    <h2>Default</h2>
-    <counter-app></counter-app>
-    <h2>Slot usage</h2>
-    <counter-app data-accent="2" data-primary="17"><div>Sample slot content</div></counter-app>
-    <h2>Property usage</h2>
-    <counter-app id="example" title="Sample property title"></counter-app>
   </div>
   <script type="module" src="./counter-app.js"></script>
+  <counter-app></counter-app>
+  <counter-app id="min/max" counter="16" min="10" max="25"></counter-app>
+
+  <script>
+    
+  </script>
 
   <!-- Take HAX, the Web and you further down the rabbit hole -->
   <style>
@@ -51,6 +50,8 @@
       margin: var(--ddd-spacing-4) auto 64px  16px;
       background-color: var(--ddd-accent-4);
       color: black;
+      text-align: center;
+      max-width: 100%;
     }
     #follow-the-white-rabbit[open] summary {
       background-color: var(--ddd-accent-4) !important;
@@ -59,7 +60,12 @@
     #follow-the-white-rabbit[open] .content {
       padding: 0 var(--ddd-spacing-4);
     }
-    #follow-the-white-rabbit ul,
+    #follow-the-white-rabbit ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+    }
     #follow-the-white-rabbit li {
       padding: 0;
       margin: 0;
