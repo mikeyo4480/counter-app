@@ -137,7 +137,7 @@ makeItRain() {
     this.message = ''
     if (this.counter == this.max) { // check if the counter is equal to the maximum value
       this.message = 'Maximum value reached'; // if so tell user they have reached the maximum value
-    console.log("incremented", this.counter); // log the incremented value
+    console.log("incremented", this.counter); // Seen in the inspect area. logs the incremented value
     }
   }
 
