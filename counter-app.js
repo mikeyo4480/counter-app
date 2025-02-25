@@ -70,7 +70,7 @@ export class CounterApp extends DDDSuper(I18NMixin(LitElement)) {
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          text-align
+          text-align: center;
         }
 
         .counter {
